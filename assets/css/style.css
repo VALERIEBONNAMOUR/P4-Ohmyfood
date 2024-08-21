@@ -1,0 +1,82 @@
+header .logo-container {
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+}
+header .logo-container #img-logo {
+  width: 197px;
+  height: 36px;
+}
+header .container-nav {
+  background-color: rgb(241, 239, 239);
+  width: 100%;
+  height: 40px;
+  position: relative;
+  box-shadow: 1px 3px 3px 0px hsl(0, 2%, 78%), 1px -3px 3px 0px hsl(0, 2%, 78%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+header a {
+  color: black;
+  size: 16px;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto;
+}
+body main .title-container {
+  text-align: center;
+  background-color: #F6F6F6;
+  padding: 50px;
+}
+body main .title-container .title-link {
+  background: linear-gradient(193.33deg, #9356DC -20.44%, #FF79DA 123.93%);
+  padding: 15px;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+body main .title-container p {
+  margin-bottom: 30px;
+}
+body main .title-container h1 {
+  margin: auto;
+}
+body main .btn-choice {
+  background-color: rgb(246, 246, 246);
+  width: 90%;
+  margin: auto;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+body main .btn-choice #icon-color {
+  color: rgb(147, 86, 220);
+  font-size: 30px;
+  transform: translate(-1rem);
+}
+body main .btn-choice .number {
+  position: absolute;
+  left: 10px;
+  color: white;
+  font-weight: bold;
+  transform: translate(-1rem);
+}
+body main .btn-choice .btn-title {
+  position: relative;
+  left: 40px;
+  font-weight: bold;
+}
+body main .btn-choice .icon-title {
+  size: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
