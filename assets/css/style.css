@@ -28,6 +28,17 @@ body {
   margin: 0;
   font-family: Roboto;
 }
+body a {
+  text-decoration: none;
+}
+body main .btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 10px;
+  padding-bottom: 60px;
+  padding-top: 20px;
+}
 body main .title-container {
   text-align: center;
   background-color: #F6F6F6;
@@ -77,6 +88,72 @@ body main .btn-choice .btn-title {
 }
 body main .btn-choice .icon-title {
   size: 50px;
+}
+body main .btn-choice i#icon-title.fa-solid.fa-store {
+  color: rgb(147, 86, 220);
+}
+body main .container-restaurants {
+  width: 100%;
+  background-color: rgb(250, 249, 249);
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+body main .container-restaurants h2 {
+  margin-left: 10px;
+}
+body main .container-restaurants .card {
+  background-color: white;
+  width: 90%;
+  height: 251px;
+  margin-left: 18px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-bottom: 20px;
+}
+body main .container-restaurants .img-card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  object-fit: cover;
+  margin: auto;
+  height: 170px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+body main .container-restaurants .card-text {
+  color: black;
+  margin-left: 10px;
+  line-height: 5px;
+  margin-top: 15px;
+}
+body main .container-restaurants h3.title-h3 {
+  margin-top: 25px;
+}
+body main .container-restaurants .rectangle {
+  background: rgb(153, 226, 208);
+  width: 80px;
+  height: 29px;
+  position: absolute;
+  transform: translate(16rem, -10rem);
+  color: rgb(0, 135, 102);
+  display: flex;
+  align-items: center;
+}
+body main .container-restaurants p.new-text {
+  margin-left: 10px;
+}
+body main .container-restaurants i.fa-regular.fa-heart {
+  position: absolute;
+  right: 10%;
+  transform: translate(-15px, -2.2rem);
+}
+body main .container-restaurants i.fa-solid.fa-heart {
+  position: absolute;
+  right: 10px;
+  transform: translate(-40px, -2.2rem);
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
 /*# sourceMappingURL=style.css.map */
