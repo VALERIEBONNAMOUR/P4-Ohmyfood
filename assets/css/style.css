@@ -24,6 +24,25 @@ header a {
   font-family: sans-serif;
 }
 
+footer .container-footer {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+footer .logo-footer {
+  margin: auto;
+  padding: 15px;
+}
+footer .logo-footer #img-logo {
+  width: 139px;
+  height: 27px;
+}
+footer .icon-footer {
+  color: white;
+}
+footer .text-footer {
+  margin-left: 40px;
+}
+
 body {
   margin: 0;
   font-family: Roboto;

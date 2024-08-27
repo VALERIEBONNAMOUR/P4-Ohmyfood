@@ -1,0 +1,27 @@
+// $primary: white;
+
+footer{
+
+    .container-footer{
+        background: rgba(53, 53, 53, 1);
+        color: white;
+    }
+
+    .logo-footer{
+        margin: auto;
+        padding: 15px;
+        #img-logo{
+            width: 139px;
+            height: 27px; 
+          
+        }
+    }
+
+    .icon-footer{
+        color: white;    
+    }
+
+    .text-footer{
+        margin-left: 40px;   
+    }
+}
