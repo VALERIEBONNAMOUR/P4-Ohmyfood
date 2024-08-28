@@ -27,20 +27,29 @@ header a {
 footer .container-footer {
   background: rgb(53, 53, 53);
   color: white;
+  width: 100%;
+  height: 186px;
+  padding: 22px 25px 22px 25px;
 }
-footer .logo-footer {
-  margin: auto;
-  padding: 15px;
-}
-footer .logo-footer #img-logo {
-  width: 139px;
-  height: 27px;
+footer .title-footer {
+  font-style: italic;
+  font-family: Shrikhand;
+  font-size: 16px;
+  text-align: left;
 }
 footer .icon-footer {
   color: white;
 }
-footer .text-footer {
-  margin-left: 40px;
+footer i.fa-solid.fa-utensils {
+  position: absolute;
+  transform: translate(0.2rem, 0px);
+}
+footer i.fa-solid.fa-handshake {
+  position: absolute;
+  transform: translate(0.2rem, 38px);
+}
+footer .text-icon {
+  margin-left: 30px;
 }
 
 body {
@@ -168,11 +177,14 @@ body main .container-restaurants i.fa-regular.fa-heart {
   right: 10%;
   transform: translate(-15px, -2.2rem);
 }
-body main .container-restaurants i.fa-solid.fa-heart {
-  position: absolute;
+body main .container-restaurants .heart, body main .container-restaurants .heart-active {
+  position: relative;
   right: 10px;
   transform: translate(-40px, -2.2rem);
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  transition-duration: 250ms;
+  cursor: pointer;
+  transition: opacity 250ms;
 }
 
 /*# sourceMappingURL=style.css.map */

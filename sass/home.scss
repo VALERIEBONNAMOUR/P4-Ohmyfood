@@ -140,15 +140,18 @@ body {
               transform: translate(-15px, -2.2rem);
             }
 
-            i.fa-solid.fa-heart{
-              position: absolute;
+            .heart,.heart-active{
+              position: relative;
               right: 10px;
               transform: translate(-40px, -2.2rem);
               background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+              transition-duration: 250ms;
+              cursor: pointer;
+              transition: opacity 250ms;
+              
+              }
+              
             }
-
-
-          }    
         
     }
 }
