@@ -12,7 +12,7 @@ header .container-nav {
   width: 100%;
   height: 40px;
   position: relative;
-  box-shadow: 1px 3px 3px 0px hsl(0, 2%, 78%), 1px -3px 3px 0px hsl(0, 2%, 78%);
+  box-shadow: 1px 3px 3px 0px hsl(0, 2%, 78%), -5px 4px 20px 0px hsl(0, 2%, 78%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,14 +24,20 @@ header a {
   font-family: sans-serif;
 }
 
+@media (min-width: 900px) {
+  header .container-nav {
+    box-shadow: none;
+  }
+}
 footer .container-footer {
   background: rgb(53, 53, 53);
   color: white;
   width: 100%;
   height: 186px;
-  padding: 22px 25px 22px 25px;
+  padding: 10px 0px 25px;
 }
 footer .title-footer {
+  margin-left: 40px;
   font-style: italic;
   font-family: Shrikhand;
   font-size: 16px;
@@ -40,16 +46,21 @@ footer .title-footer {
 footer .icon-footer {
   color: white;
 }
+footer .text-footer {
+  margin-left: 40px;
+}
 footer i.fa-solid.fa-utensils {
   position: absolute;
-  transform: translate(0.2rem, 0px);
+  transform: translate(0.5rem, 0px);
+  margin-left: 35px;
 }
 footer i.fa-solid.fa-handshake {
   position: absolute;
   transform: translate(0.2rem, 38px);
+  margin-left: 40px;
 }
 footer .text-icon {
-  margin-left: 30px;
+  margin-left: 70px;
 }
 
 body {
@@ -131,9 +142,9 @@ body main .container-restaurants h2 {
 }
 body main .container-restaurants .card {
   background-color: white;
-  width: 90%;
+  width: 100%;
   height: 251px;
-  margin-left: 18px;
+  position: relative;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -160,11 +171,13 @@ body main .container-restaurants h3.title-h3 {
   margin-top: 25px;
 }
 body main .container-restaurants .rectangle {
+  top: 15px;
+  right: 25px;
+  justify-content: center;
   background: rgb(153, 226, 208);
   width: 80px;
   height: 29px;
   position: absolute;
-  transform: translate(16rem, -10rem);
   color: rgb(0, 135, 102);
   display: flex;
   align-items: center;
@@ -172,19 +185,43 @@ body main .container-restaurants .rectangle {
 body main .container-restaurants p.new-text {
   margin-left: 10px;
 }
-body main .container-restaurants i.fa-regular.fa-heart {
-  position: absolute;
-  right: 10%;
-  transform: translate(-15px, -2.2rem);
-}
-body main .container-restaurants .heart, body main .container-restaurants .heart-active {
+body main .container-restaurants .footer-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
-  right: 10px;
-  transform: translate(-40px, -2.2rem);
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  transition-duration: 250ms;
-  cursor: pointer;
-  transition: opacity 250ms;
+}
+body main .container-restaurants .footer-card .icon-heart {
+  position: relative;
+  width: 30px;
+  right: 0;
+}
+body main .container-restaurants .footer-card .icon-heart i {
+  background: linear-gradient(193.33deg, #9356DC -20.44%, #FF79DA 123.93%);
+  position: absolute;
+  transition: opacity 0.5s ease-in-out;
+}
+body main .container-restaurants .footer-card .icon-heart .active-heart {
+  opacity: 0;
+}
+body main .container-restaurants .footer-card .icon-heart .active-heart:hover {
+  opacity: 1;
+}
+
+@media (min-width: 800px) {
+  main .container-flex {
+    display: flex;
+    gap: 30px;
+  }
+  main .btn-choice {
+    width: calc(33% - 15px);
+  }
+  main .btn-container {
+    padding: 40px;
+  }
+  main .container-restaurants {
+    padding: 40px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

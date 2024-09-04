@@ -87,9 +87,9 @@ body {
 
             .card{
               background-color: white;
-              width: 90%;
+              width: 100%;
               height: 251px;
-              margin-left: 18px;
+              position: relative;
               border-top-right-radius: 15px;
               border-top-left-radius: 15px;
               border-bottom-left-radius: 15px;
@@ -120,11 +120,14 @@ body {
             }
 
             .rectangle{
+              top: 15px;
+              right: 25px;
+              justify-content: center;
+              // margin-top: -150px;
               background: rgba(153, 226, 208, 1);
               width: 80px;
               height: 29px;
               position: absolute;
-              transform: translate(16rem, -10rem);
               color: rgba(0, 135, 102, 1);
               display: flex;
               align-items: center;
@@ -134,24 +137,53 @@ body {
              margin-left: 10px;
             }
 
-            i.fa-regular.fa-heart{
-              position: absolute;
-              right: 10%;
-              transform: translate(-15px, -2.2rem);
-            }
-
-            .heart,.heart-active{
+            .footer-card {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
               position: relative;
-              right: 10px;
-              transform: translate(-40px, -2.2rem);
-              background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-              transition-duration: 250ms;
-              cursor: pointer;
-              transition: opacity 250ms;
-              
+      
+              .icon-heart {
+                position: relative;
+                width: 30px;
+                right: 0;
+      
+                i {
+                  background: linear-gradient(193.33deg, #9356DC -20.44%, #FF79DA 123.93%);
+                  position: absolute;
+                  transition: opacity 0.5s ease-in-out;
+                }
+      
+                .active-heart {
+                  opacity: 0;
+                }
+      
+                .active-heart:hover {
+                  opacity: 1;
+                }
               }
-              
+            }
             }
         
     }
+   
+}
+@media (min-width: 800px){
+  main{
+    .container-flex{
+      display: flex;
+      gap: 30px;
+      
+    }
+    .btn-choice{
+      width: calc(33% - 15px);
+    }
+    .btn-container{
+      padding: 40px;
+    }
+    .container-restaurants{
+      padding: 40px;
+    }
+  }
+  
 }
