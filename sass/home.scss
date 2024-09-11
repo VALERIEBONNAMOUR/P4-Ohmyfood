@@ -76,7 +76,6 @@ body {
           }
         }
           .container-restaurants{
-            width: 100%;
             background-color: rgb(250, 249, 249);
             padding-top: 30px;
             padding-bottom: 60px;
@@ -123,7 +122,6 @@ body {
               top: 15px;
               right: 25px;
               justify-content: center;
-              // margin-top: -150px;
               background: rgba(153, 226, 208, 1);
               width: 80px;
               height: 29px;
@@ -169,21 +167,34 @@ body {
    
 }
 @media (min-width: 800px){
-  main{
-    .container-flex{
-      display: flex;
-      gap: 30px;
-      
-    }
-    .btn-choice{
-      width: calc(33% - 15px);
-    }
-    .btn-container{
-      padding: 40px;
-    }
-    .container-restaurants{
-      padding: 40px;
+  body{
+    main{
+      .container-flex{
+        display: flex;
+        gap: 30px;
+        
+      }
+      .btn-choice{
+        width: calc(33% - 15px);
+      }
+      .btn-container{
+        padding: 40px;
+      }
+      .container-restaurants{
+        padding: 40px;
+        a{
+          width: calc(50% - 30px);
+        }
+      }
+      .restaurants-cards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-between;
+      }
+  
     }
   }
+  
   
 }
