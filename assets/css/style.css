@@ -44,6 +44,12 @@ main .container-card {
   position: relative;
   bottom: 60px;
 }
+main .container-card .container-title {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin-left: 15px;
+}
 main img {
   height: 295px;
   width: 100%;
@@ -54,193 +60,76 @@ main h1 {
   font-weight: bold;
   font-weight: 400;
   font-family: shrikhand;
-  position: absolute;
-  left: 15px;
 }
-main .icone-menu {
+main .icon-menu {
   position: relative;
-  top: 35px;
-  left: 330px;
+  width: 30px;
+  margin: 0;
 }
-main .icone-menu i {
+main .icon-menu i {
   background: linear-gradient(193.33deg, #9356DC -20.44%, #FF79DA 123.93%);
   position: absolute;
   transition: opacity 0.5s ease-in-out;
 }
-main .icone-menu .active-heart {
+main .icon-menu .active-heart {
   opacity: 0;
 }
-main .icone-menu .active-heart:hover {
+main .icon-menu .active-heart:hover {
   opacity: 1;
 }
+main .title-card {
+  margin-left: 15px;
+  padding-top: 30px;
+}
 main h2 {
+  font-size: large;
   font-weight: 300;
   font-family: roboto;
-  position: absolute;
-  top: 80px;
-  left: 15px;
+  margin: 0;
 }
 main .ligne-title {
   background-color: rgb(153, 226, 208);
-  width: 60px;
+  width: 45px;
   height: 3px;
   border: 3px;
-  position: absolute;
-  top: 135px;
-  left: 15px;
+  margin-top: 5px;
 }
 main .card-menu {
   background-color: white;
   height: 72px;
   border-radius: 15px 15px 15px 15px;
-  position: absolute;
-  left: 15px;
-  right: 15px;
-  top: 150px;
-  gap: 5px;
+  margin: 10px;
 }
-main h3 {
-  color: black;
-  font-weight: 500;
-  position: relative;
-  left: 10px;
-  bottom: 8px;
-}
-main .subtitle-card {
+main .card-menu .subtitle-card {
   color: black;
   font-weight: 300;
-  position: relative;
-  left: 10px;
-  bottom: 20px;
   font-size: small;
+  padding-left: 10px;
+  line-height: 5px;
 }
-main .card-prices {
+main .card-menu h3 {
+  color: black;
+  font-weight: 500;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+main .card-menu .card-prices {
   color: black;
   font-weight: bold;
-  display: flex;
-  justify-content: end;
-  margin-right: 20px;
-  position: relative;
-  bottom: 68px;
-}
-main .card-menu-2 {
-  background-color: white;
-  height: 72px;
-  border-radius: 15px 15px 15px 15px;
-  position: absolute;
-  left: 15px;
-  right: 15px;
-  top: 240px;
-  gap: 5px;
-}
-main .card-menu-3 {
-  background-color: white;
-  height: 72px;
-  border-radius: 15px 15px 15px 15px;
-  position: absolute;
-  left: 15px;
-  right: 15px;
-  top: 330px;
-  gap: 5px;
-}
-main .title-card-2 {
-  position: absolute;
-  top: 340px;
-}
-main .ligne-title-2 {
-  background-color: rgb(153, 226, 208);
-  width: 60px;
-  height: 3px;
-  border: 3px;
-  position: absolute;
-  top: 478px;
-  left: 15px;
-}
-main .card-menu-4 {
-  background-color: white;
-  height: 72px;
-  border-radius: 15px 15px 15px 15px;
-  position: absolute;
-  left: 15px;
-  right: 15px;
-  top: 500px;
-  gap: 5px;
-}
-main .card-menu-5 {
-  background-color: white;
-  height: 72px;
-  border-radius: 15px 15px 15px 15px;
-  position: absolute;
-  left: 15px;
-  right: 15px;
-  top: 590px;
-  gap: 5px;
-}
-main .card-menu-6 {
-  background-color: white;
-  height: 72px;
-  border-radius: 15px 15px 15px 15px;
-  position: absolute;
-  left: 15px;
-  right: 15px;
-  top: 680px;
-  gap: 5px;
-}
-main .title-card-3 {
-  position: absolute;
-  top: 690px;
-}
-main .ligne-title-3 {
-  background-color: rgb(153, 226, 208);
-  width: 60px;
-  height: 3px;
-  border: 3px;
-  position: absolute;
-  top: 830px;
-  left: 15px;
-}
-main .card-menu-7 {
-  background-color: white;
-  height: 72px;
-  border-radius: 15px 15px 15px 15px;
-  position: absolute;
-  left: 15px;
-  right: 15px;
-  top: 850px;
-  gap: 5px;
-}
-main .card-menu-8 {
-  background-color: white;
-  height: 72px;
-  border-radius: 15px 15px 15px 15px;
-  position: absolute;
-  left: 15px;
-  right: 15px;
-  top: 940px;
-  gap: 5px;
-}
-main .card-menu-9 {
-  background-color: white;
-  height: 72px;
-  border-radius: 15px 15px 15px 15px;
-  position: absolute;
-  left: 15px;
-  right: 15px;
-  top: 1030px;
-  gap: 5px;
+  padding-left: 300px;
 }
 main .title-link-menu {
   background: linear-gradient(193.33deg, #9356DC -20.44%, #FF79DA 123.93%);
   padding: 20px;
-  padding-right: 60px;
-  padding-left: 60px;
   border-radius: 25px;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+main .link-menu {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  position: absolute;
-  bottom: 45px;
-  left: 95px;
+  padding-left: 65px;
 }
 
 footer .container-footer {

@@ -1,219 +1,123 @@
-header{
-    .icone-1{
+header {
+    .icone-1 {
         position: absolute;
         left: 30px;
         top: 25px;
     }
 }
 
-main{
-    .container-card{
+main {
+    .container-card {
         background-color: rgba(246, 246, 246, 1);
         width: 100%;
         height: 1250px;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
         position: relative;
-        bottom: 60px;   
+        bottom: 60px;
+        .container-title {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            margin-left: 15px;
+        }
     }
-    img{
+
+    img {
         height: 295px;
         width: 100%;
     }
-    h1{
+
+    h1 {
         font-size: 28px;
         font-style: italic;
         font-weight: bold;
         font-weight: 400;
         font-family: shrikhand;
-        position: absolute;
-        left: 15px;
     }
-    .icone-menu{
+
+    .icon-menu {
         position: relative;
-        top: 35px;
-        left: 330px;
+        width: 30px;
+        margin: 0;
+
         i {
             background: linear-gradient(193.33deg, #9356DC -20.44%, #FF79DA 123.93%);
             position: absolute;
             transition: opacity 0.5s ease-in-out;
-          }
+        }
 
-          .active-heart {
+        .active-heart {
             opacity: 0;
-          }
+        }
 
-          .active-heart:hover {
+        .active-heart:hover {
             opacity: 1;
-          }
+        }
     }
-    h2{
+
+    .title-card{
+        margin-left: 15px;
+        padding-top: 30px;
+    }
+
+    h2 {
+        font-size: large;
         font-weight: 300;
         font-family: roboto;
-        position: absolute;
-        top: 80px;
-        left: 15px;
+        margin: 0;
     }
-    .ligne-title{
+
+    .ligne-title {
         background-color: rgba(153, 226, 208, 1);
-        width: 60px;
+        width: 45px;
         height: 3px;
         border: 3px;
-        position: absolute;
-        top: 135px;
-        left: 15px;
+        margin-top: 5px;
     }
-    .card-menu{
+
+    .card-menu {
         background-color: white;
         height: 72px;
         border-radius: 15px 15px 15px 15px;
-        position: absolute;
-        left: 15px;
-        right: 15px ;
-        top: 150px;
-        gap: 5px;
+        margin: 10px;
+        
+        .subtitle-card {
+            color: black;
+            font-weight: 300;
+            font-size: small;
+            padding-left: 10px;
+            line-height:    5px;
+        }
+        h3 {
+            color: black;
+            font-weight: 500;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+        .card-prices {
+            color: black;
+            font-weight: bold;
+            padding-left: 300px;
+            // display: flex;
+            // justify-content: flex-end;   
+        }
+        p.card-prices{
+           
+        }
     }
-    h3{
-        color: black;
-        font-weight: 500;
-        position: relative;
-        left: 10px;
-        bottom: 8px;
-    }
-    .subtitle-card{
-        color: black;
-        font-weight: 300;
-        position: relative;
-        left: 10px;
-        bottom: 20px;
-        font-size: small; 
-    }
-    .card-prices{
-        color: black;
-        font-weight: bold;
-        display: flex;
-        justify-content: end;
-        margin-right: 20px;
-        position: relative;
-        bottom: 68px;
-    }
-    .card-menu-2{
-        background-color: white;
-        height: 72px;
-        border-radius: 15px 15px 15px 15px;
-        position: absolute;
-        left: 15px;
-        right: 15px ;
-        top: 240px;
-        gap: 5px;
-    }
-    .card-menu-3{
-        background-color: white;
-        height: 72px;
-        border-radius: 15px 15px 15px 15px;
-        position: absolute;
-        left: 15px;
-        right: 15px ;
-        top: 330px;
-        gap: 5px; 
-    }
-    .title-card-2{
-        position: absolute;
-        top: 340px;
-    }
-    .ligne-title-2{
-        background-color: rgba(153, 226, 208, 1);
-        width: 60px;
-        height: 3px;
-        border: 3px;
-        position: absolute;
-        top: 478px;
-        left: 15px;
-    }
-    .card-menu-4{
-        background-color: white;
-        height: 72px;
-        border-radius: 15px 15px 15px 15px;
-        position: absolute;
-        left: 15px;
-        right: 15px ;
-        top: 500px;
-        gap: 5px; 
-    }
-    .card-menu-5{
-        background-color: white;
-        height: 72px;
-        border-radius: 15px 15px 15px 15px;
-        position: absolute;
-        left: 15px;
-        right: 15px ;
-        top: 590px;
-        gap: 5px; 
-    }
-    .card-menu-6{
-        background-color: white;
-        height: 72px;
-        border-radius: 15px 15px 15px 15px;
-        position: absolute;
-        left: 15px;
-        right: 15px ;
-        top: 680px;
-        gap: 5px; 
-    }
-    .title-card-3{
-        position: absolute;
-        top: 690px;
-    }
-    .ligne-title-3{
-        background-color: rgba(153, 226, 208, 1);
-        width: 60px;
-        height: 3px;
-        border: 3px;
-        position: absolute;
-        top: 830px;
-        left: 15px;
-    }
-    .card-menu-7{
-        background-color: white;
-        height: 72px;
-        border-radius: 15px 15px 15px 15px;
-        position: absolute;
-        left: 15px;
-        right: 15px ;
-        top: 850px;
-        gap: 5px; 
-    }
-    .card-menu-8{
-        background-color: white;
-        height: 72px;
-        border-radius: 15px 15px 15px 15px;
-        position: absolute;
-        left: 15px;
-        right: 15px ;
-        top: 940px;
-        gap: 5px; 
-    }
-    .card-menu-9{
-        background-color: white;
-        height: 72px;
-        border-radius: 15px 15px 15px 15px;
-        position: absolute;
-        left: 15px;
-        right: 15px ;
-        top: 1030px;
-        gap: 5px; 
-    }
-    .title-link-menu{
+
+    .title-link-menu {
         background: linear-gradient(193.33deg, #9356DC -20.44%, #FF79DA 123.93%);
         padding: 20px;
-        padding-right: 60px;
-        padding-left: 60px;
         border-radius: 25px;
+        margin-right: 60px;
+        margin-left: 60px;    
+    }
+    .link-menu{
         color: white;
         text-decoration: none;
         font-weight: bold;
-        position: absolute;
-        bottom: 45px;
-        left: 95px;
+       padding-left: 65px;
     }
 }
