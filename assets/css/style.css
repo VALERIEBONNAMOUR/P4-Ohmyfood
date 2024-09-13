@@ -141,6 +141,9 @@ main .link-menu {
   padding-left: 45px;
   font-size: large;
 }
+main .space-icon {
+  margin-left: 55px;
+}
 
 footer .container-footer {
   background: rgb(53, 53, 53);
