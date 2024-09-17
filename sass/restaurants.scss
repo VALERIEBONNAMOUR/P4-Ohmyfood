@@ -15,6 +15,7 @@ main {
         border-top-right-radius: 30px;
         position: relative;
         bottom: 60px;
+
         .container-title {
             display: flex;
             gap: 50px;
@@ -56,7 +57,7 @@ main {
         }
     }
 
-    .title-card{
+    .title-card {
         margin-left: 15px;
         padding-top: 30px;
     }
@@ -81,32 +82,35 @@ main {
         height: 72px;
         border-radius: 15px 15px 15px 15px;
         margin: 10px;
-        
+
         .subtitle-card {
             color: black;
             font-weight: 300;
             font-size: small;
             padding-left: 10px;
-            line-height:    5px;
+            line-height: 5px;
         }
+
         h3 {
             color: black;
             font-weight: 500;
             padding-left: 10px;
             padding-top: 20px;
         }
+
         .card-prices {
             color: black;
             font-weight: bold;
             display: flex;
             justify-content: flex-end;
 
-        p{
-            margin: -30px;
-            margin-right: 20px;
+            p {
+                margin: -30px;
+                margin-right: 20px;
+            }
         }
-        }
-        .text-card{
+
+        .text-card {
             line-height: 5px;
         }
     }
@@ -116,10 +120,11 @@ main {
         padding: 20px;
         border-radius: 30px;
         margin-right: 80px;
-        margin-left: 80px;  
-        margin-top: 30px;  
+        margin-left: 80px;
+        margin-top: 30px;
     }
-    .link-menu{
+
+    .link-menu {
         color: white;
         text-decoration: none;
         font-weight: bold;
@@ -127,7 +132,52 @@ main {
         font-size: large;
     }
 
-    .space-icon{
+    .space-icon {
         margin-left: 55px;
+    }
+}
+
+@media (min-width: 1440px){
+    body {
+        main {
+            .container-card {
+                background-color: rgba(246, 246, 246, 1);
+                width: 1055px;
+                height: 1221px;
+                left: 193px;
+                border-top-left-radius: 30px;
+                border-top-right-radius: 30px;
+            
+
+                .container-title {
+                    display: flex;
+                    gap: 50px;
+                    justify-content: center;
+                    margin-left: 15px;
+                }
+            }
+
+            img {
+                height: 450px;
+                width: 1440px;
+            }
+            h1{
+                display: flex;
+                align-items: center;
+            }
+            .card-menu{
+                height: 69px;
+                width: 634px;
+                margin-left: 190px;
+            }
+            .title-card{
+                margin-left: 190px;
+            }
+            .title-link-menu{
+                width: 186px;
+                display: flex;
+                
+            }
+        }
     }
 }

@@ -24,7 +24,7 @@ header a {
   font-family: sans-serif;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1440px) {
   header .container-nav {
     box-shadow: none;
   }
@@ -145,6 +145,42 @@ main .space-icon {
   margin-left: 55px;
 }
 
+@media (min-width: 1440px) {
+  body main .container-card {
+    background-color: rgb(246, 246, 246);
+    width: 1055px;
+    height: 1221px;
+    left: 193px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  body main .container-card .container-title {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-left: 15px;
+  }
+  body main img {
+    height: 450px;
+    width: 1440px;
+  }
+  body main h1 {
+    display: flex;
+    align-items: center;
+  }
+  body main .card-menu {
+    height: 69px;
+    width: 634px;
+    margin-left: 190px;
+  }
+  body main .title-card {
+    margin-left: 190px;
+  }
+  body main .title-link-menu {
+    width: 186px;
+    display: flex;
+  }
+}
 footer .container-footer {
   background: rgb(53, 53, 53);
   color: white;
@@ -163,22 +199,33 @@ footer .icon-footer {
   color: white;
 }
 footer .text-footer {
-  margin-left: 40px;
-}
-footer i.fa-solid.fa-utensils {
-  position: absolute;
-  transform: translate(0.5rem, 0px);
-  margin-left: 35px;
-}
-footer i.fa-solid.fa-handshake {
-  position: absolute;
-  transform: translate(0.2rem, 38px);
-  margin-left: 40px;
-}
-footer .text-icon {
+  display: flex;
   margin-left: 70px;
 }
+footer p.text-footer.text-icon {
+  margin-top: -50px;
+}
+footer i.fa-solid.fa-utensils {
+  display: flex;
+  margin-left: 40px;
+}
+footer i.fa-solid.fa-handshake {
+  display: flex;
+  margin-left: 40px;
+  margin-top: 20px;
+  transform: rotate(45%);
+}
 
+@media (min-width: 1440px) {
+  .container-footer {
+    display: flex;
+    flex-direction: row;
+    height: 60px !important;
+  }
+  .container-footer .title-footer {
+    margin-left: 500px;
+  }
+}
 body {
   margin: 0;
   font-family: Roboto;
@@ -254,6 +301,8 @@ body main .container-restaurants {
 }
 body main .container-restaurants h2 {
   margin-left: 10px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 body main .container-restaurants .card {
   background-color: white;
@@ -323,10 +372,14 @@ body main .container-restaurants .footer-card .icon-heart .active-heart:hover {
   opacity: 1;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1440px) {
   body main .container-flex {
     display: flex;
     gap: 30px;
+  }
+  body main h1 {
+    display: flex;
+    justify-content: center;
   }
   body main .btn-choice {
     width: calc(33% - 15px);
