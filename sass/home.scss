@@ -7,6 +7,9 @@ body {
     }
 
     main {
+      h2{
+        font-weight: bold;
+      }
         .btn-container{
           display: flex;
           flex-direction: column;
@@ -14,6 +17,12 @@ body {
           margin-left: 10px;
           padding-bottom: 60px;
           padding-top: 20px;
+        .container-flex {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+        
         }
         .title-container {
             text-align: center;
@@ -82,7 +91,6 @@ body {
 
             h2{
               margin-left: 10px;
-              font-weight: bold;
               margin-bottom: 15px;
             }
 
@@ -142,6 +150,7 @@ body {
               justify-content: space-between;
               align-items: center;
               position: relative;
+              margin-right: 15px;
       
               .icon-heart {
                 position: relative;
@@ -173,6 +182,7 @@ body {
     main{
       .container-flex{
         display: flex;
+        flex-direction: row !important;
         gap: 30px;
         
       }
@@ -198,7 +208,11 @@ body {
         gap: 30px;
         justify-content: space-between;
       }
-  
+      
+      .card-text{
+        margin-top: 0 !important;
+      }
+
     }
   }
   

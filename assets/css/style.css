@@ -38,7 +38,6 @@ header .icone-1 {
 main .container-card {
   background-color: rgb(246, 246, 246);
   width: 100%;
-  height: 1250px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   position: relative;
@@ -82,7 +81,6 @@ main .title-card {
   padding-top: 30px;
 }
 main h2 {
-  font-size: large;
   font-weight: 300;
   font-family: roboto;
   margin: 0;
@@ -130,15 +128,15 @@ main .title-link-menu {
   background: linear-gradient(193.33deg, #9356DC -20.44%, #FF79DA 123.93%);
   padding: 20px;
   border-radius: 30px;
-  margin-right: 80px;
-  margin-left: 80px;
+  display: flex;
+  justify-content: center;
+  margin-left: 400px;
   margin-top: 30px;
 }
 main .link-menu {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  padding-left: 45px;
   font-size: large;
 }
 main .space-icon {
@@ -172,6 +170,7 @@ main .space-icon {
     height: 69px;
     width: 634px;
     margin-left: 190px;
+    animation: menu 3s;
   }
   body main .title-card {
     margin-left: 190px;
@@ -180,50 +179,71 @@ main .space-icon {
     width: 186px;
     display: flex;
   }
+  .footer-restaurants i.fa-solid.fa-utensils {
+    margin-right: 170px;
+  }
+  .footer-restaurants i.fa-solid.fa-handshake {
+    margin-right: -200px;
+  }
+}
+footer {
+  background: rgb(53, 53, 53);
+  width: 100%;
 }
 footer .container-footer {
-  background: rgb(53, 53, 53);
+  padding: 30px;
   color: white;
-  width: 100%;
-  height: 186px;
-  padding: 10px 0px 25px;
+}
+footer .container-footer p {
+  margin: 0;
+}
+footer .container-footer h2 {
+  margin-top: 0;
+}
+footer .container-footer .container-link {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 footer .title-footer {
-  margin-left: 40px;
   font-style: italic;
   font-family: Shrikhand;
   font-size: 16px;
   text-align: left;
 }
 footer .icon-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   color: white;
 }
+footer .icon-footer i.fa-solid.fa-handshake {
+  transform: rotateZ(330deg);
+}
 footer .text-footer {
-  display: flex;
-  margin-left: 70px;
-}
-footer p.text-footer.text-icon {
-  margin-top: -50px;
-}
-footer i.fa-solid.fa-utensils {
-  display: flex;
-  margin-left: 40px;
-}
-footer i.fa-solid.fa-handshake {
-  display: flex;
-  margin-left: 40px;
-  margin-top: 20px;
-  transform: rotate(45%);
+  color: white;
 }
 
 @media (min-width: 1440px) {
   .container-footer {
     display: flex;
-    flex-direction: row;
-    height: 60px !important;
+    flex-direction: row-reverse;
+    gap: 30px;
+    align-items: center;
   }
-  .container-footer .title-footer {
-    margin-left: 500px;
+  .container-link {
+    flex-direction: row !important;
+  }
+  h2 {
+    margin-right: 15px;
+    margin-top: 15px;
+  }
+  .title-footer {
+    margin-top: 20px;
+  }
+  .text-footer {
+    color: white;
+    margin-right: 20px !important;
   }
 }
 body {
@@ -233,6 +253,9 @@ body {
 body a {
   text-decoration: none;
 }
+body main h2 {
+  font-weight: bold;
+}
 body main .btn-container {
   display: flex;
   flex-direction: column;
@@ -240,6 +263,11 @@ body main .btn-container {
   margin-left: 10px;
   padding-bottom: 60px;
   padding-top: 20px;
+}
+body main .btn-container .container-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 body main .title-container {
   text-align: center;
@@ -301,7 +329,6 @@ body main .container-restaurants {
 }
 body main .container-restaurants h2 {
   margin-left: 10px;
-  font-weight: bold;
   margin-bottom: 15px;
 }
 body main .container-restaurants .card {
@@ -354,6 +381,7 @@ body main .container-restaurants .footer-card {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  margin-right: 15px;
 }
 body main .container-restaurants .footer-card .icon-heart {
   position: relative;
@@ -375,6 +403,7 @@ body main .container-restaurants .footer-card .icon-heart .active-heart:hover {
 @media (min-width: 1440px) {
   body main .container-flex {
     display: flex;
+    flex-direction: row !important;
     gap: 30px;
   }
   body main h1 {
@@ -398,6 +427,48 @@ body main .container-restaurants .footer-card .icon-heart .active-heart:hover {
     flex-wrap: wrap;
     gap: 30px;
     justify-content: space-between;
+  }
+  body main .card-text {
+    margin-top: 0 !important;
+  }
+}
+@keyframes menu {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+body main .i.fa-solid.fa-arrow-left {
+  display: none;
+  background: rgb(153, 226, 208);
+}
+body main .white-round {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+}
+body main .green-square {
+  width: 59px;
+  height: 69px;
+  margin-left: 635px;
+  background: rgb(153, 226, 208);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  transform-origin: left;
+  transition: 5s;
+}
+@keyframes green-square {
+  0% {
+    transform: translate(200px);
+  }
+  100% {
+    transform: translate(0);
   }
 }
 
