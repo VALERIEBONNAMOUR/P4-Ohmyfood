@@ -20,6 +20,7 @@ main {
             gap: 50px;
             align-items: center;
             margin-left: 15px;
+            justify-content: space-between;
         }
     }
 
@@ -29,16 +30,15 @@ main {
     }
 
     h1 {
-        font-size: 28px;
-        font-style: italic;
+        font-size: 32px;
         font-weight: bold;
-        font-weight: 400;
-        font-family: shrikhand;
+        font-family: roboto;
+        
     }
 
     .icon-menu {
         position: relative;
-        width: 30px;
+        width: 60px;
         margin: 0;
 
         i {
@@ -62,7 +62,7 @@ main {
     }
 
     h2 {
-        font-weight: 300;
+        font-weight: normal;
         font-family: roboto;
         margin: 0;
     }
@@ -78,8 +78,16 @@ main {
     .card-menu {
         background-color: white;
         height: 72px;
+        padding: 10px;
         border-radius: 15px 15px 15px 15px;
         margin: 10px;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            margin: 0;
+        }
 
         .subtitle-card {
             color: black;
@@ -92,35 +100,65 @@ main {
         h3 {
             color: black;
             font-weight: 500;
-            padding-left: 10px;
-            padding-top: 20px;
+            margin: 0;
         }
 
         .card-prices {
             color: black;
             font-weight: bold;
             display: flex;
-            justify-content: flex-end;
+            align-items: center;
+            transform: translateX(70px);
+            transition: transform 0.5s ease;
 
             p {
                 margin: -30px;
                 margin-right: 20px;
             }
+
+            .check {
+                align-items: center;
+                display: flex;
+                height: 100%;
+                background:  rgba(153, 226, 208, 1);
+                padding: 10px;
+                width: 40px;
+                justify-content: center;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+
+            i.fa-solid.fa-circle-check{
+                color: white;
+            }
         }
 
         .text-card {
-            line-height: 5px;
+            color: black;
+            height: 100%;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
         }
     }
 
+    .card-menu:hover .card-prices {
+        transform: translateX(0);
+        margin-right: -10px;
+    }
+
+    .rectangle{
+        display: flex;
+        justify-content: center;
+    }
     .title-link-menu {
         background: linear-gradient(193.33deg, #9356DC -20.44%, #FF79DA 123.93%);
         padding: 20px;
         border-radius: 30px;
         display: flex;
         justify-content: center;
-        margin-left: 400px;
-        margin-top: 30px;
+        margin: 0;
     }
 
     .link-menu {
@@ -133,20 +171,19 @@ main {
     .space-icon {
         margin-left: 55px;
     }
+
 }
 
-@media (min-width: 1440px){
-    body {
+@media (min-width: 1024px){
+    
         main {
             .container-card {
                 background-color: rgba(246, 246, 246, 1);
-                width: 1055px;
-                height: 1221px;
-                left: 193px;
+                width: 70%;
+                left: 159px;
                 border-top-left-radius: 30px;
                 border-top-right-radius: 30px;
-            
-
+                
                 .container-title {
                     display: flex;
                     gap: 50px;
@@ -156,26 +193,30 @@ main {
             }
 
             img {
-                height: 450px;
-                width: 1440px;
+                height: 400px;
             }
+
             h1{
                 display: flex;
                 align-items: center;
+                font-family: roboto;
+                font-weight: bold;
             }
+
+        
             .card-menu{
-                height: 69px;
-                width: 634px;
-                margin-left: 190px;
+                width: 65%;
+                height: 50px;
+                margin: auto;
+                margin-bottom: 10px;
                 animation: menu 3s;
             }
             .title-card{
-                margin-left: 190px;
+                margin-left: 120px;
+                margin-bottom: 10px;
             }
             .title-link-menu{
-                width: 186px;
-                display: flex;
-                
+                width: 30%;  
             }
         }
     }
@@ -187,4 +228,3 @@ main {
             margin-right: -200px;
         }
     }
-}
