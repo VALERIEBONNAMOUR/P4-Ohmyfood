@@ -8,15 +8,19 @@ body{
         color:white;
         text-align: center; 
         font-size: 40px; 
+        animation: fadeout 5s ease-in;
+        animation-fill-mode: forwards;
         }
+
       .container-loader{
         display: flex;
         justify-content: center;
         align-items: center;
         background-color:#16a085;
-        height: 100px;
-        line-height: 100px;
-        
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
       }
 
       .loader{
@@ -50,6 +54,16 @@ body{
         0%{ transform: rotate(0deg);} 
         50%{ opacity: 1;}
         100%{ transform: rotate(360deg);opacity: 0;}
+      }
+
+      @keyframes fadeout{
+        from{
+            opacity: 1;
+        }
+        to{
+            opacity: 0;
+            display: none;
+        }
       }
     
 }

@@ -14,6 +14,7 @@ main {
         border-top-right-radius: 30px;
         position: relative;
         bottom: 60px;
+       
 
         .container-title {
             display: flex;
@@ -21,6 +22,7 @@ main {
             align-items: center;
             margin-left: 15px;
             justify-content: space-between;
+            margin-right: 25px;
         }
     }
 
@@ -32,28 +34,8 @@ main {
     h1 {
         font-size: 32px;
         font-weight: bold;
-        font-family: roboto;
+        font-family: shrikhand;
         
-    }
-
-    .icon-menu {
-        position: relative;
-        width: 60px;
-        margin: 0;
-
-        i {
-            background: linear-gradient(193.33deg, #9356DC -20.44%, #FF79DA 123.93%);
-            position: absolute;
-            transition: opacity 0.5s ease-in-out;
-        }
-
-        .active-heart {
-            opacity: 0;
-        }
-
-        .active-heart:hover {
-            opacity: 1;
-        }
     }
 
     .title-card {
@@ -199,7 +181,7 @@ main {
             h1{
                 display: flex;
                 align-items: center;
-                font-family: roboto;
+                font-family: shrikhand;
                 font-weight: bold;
             }
 
@@ -207,24 +189,16 @@ main {
             .card-menu{
                 width: 65%;
                 height: 50px;
-                margin: auto;
                 margin-bottom: 10px;
                 animation: menu 3s;
             }
             .title-card{
-                margin-left: 120px;
-                margin-bottom: 10px;
+                // margin-left: 120px;
+                // margin-bottom: 10px;
             }
             .title-link-menu{
                 width: 30%;  
             }
         }
     }
-    .footer-restaurants{
-        i.fa-solid.fa-utensils{
-            margin-right: 170px;
-        }
-        i.fa-solid.fa-handshake{
-            margin-right: -200px;
-        }
-    }
+

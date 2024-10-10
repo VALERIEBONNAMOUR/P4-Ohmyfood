@@ -49,6 +49,7 @@ main .container-card .container-title {
   align-items: center;
   margin-left: 15px;
   justify-content: space-between;
+  margin-right: 25px;
 }
 main img {
   height: 295px;
@@ -57,23 +58,7 @@ main img {
 main h1 {
   font-size: 32px;
   font-weight: bold;
-  font-family: roboto;
-}
-main .icon-menu {
-  position: relative;
-  width: 60px;
-  margin: 0;
-}
-main .icon-menu i {
-  background: linear-gradient(193.33deg, #9356DC -20.44%, #FF79DA 123.93%);
-  position: absolute;
-  transition: opacity 0.5s ease-in-out;
-}
-main .icon-menu .active-heart {
-  opacity: 0;
-}
-main .icon-menu .active-heart:hover {
-  opacity: 1;
+  font-family: shrikhand;
 }
 main .title-card {
   margin-left: 15px;
@@ -196,31 +181,19 @@ main .space-icon {
   main h1 {
     display: flex;
     align-items: center;
-    font-family: roboto;
+    font-family: shrikhand;
     font-weight: bold;
   }
   main .card-menu {
     width: 65%;
     height: 50px;
-    margin: auto;
     margin-bottom: 10px;
     animation: menu 3s;
-  }
-  main .title-card {
-    margin-left: 120px;
-    margin-bottom: 10px;
   }
   main .title-link-menu {
     width: 30%;
   }
 }
-.footer-restaurants i.fa-solid.fa-utensils {
-  margin-right: 170px;
-}
-.footer-restaurants i.fa-solid.fa-handshake {
-  margin-right: -200px;
-}
-
 footer {
   background: rgb(53, 53, 53);
   width: 100%;
@@ -323,6 +296,7 @@ body main .title-container p {
 }
 body main .title-container h1 {
   margin: auto;
+  font-family: roboto;
 }
 body main .btn-choice {
   background-color: rgb(246, 246, 246);
@@ -422,22 +396,6 @@ body main .container-restaurants .footer-card {
   position: relative;
   margin-right: 15px;
 }
-body main .container-restaurants .footer-card .icon-heart {
-  position: relative;
-  width: 30px;
-  right: 0;
-}
-body main .container-restaurants .footer-card .icon-heart i {
-  background: linear-gradient(193.33deg, #9356DC -20.44%, #FF79DA 123.93%);
-  position: absolute;
-  transition: opacity 0.5s ease-in-out;
-}
-body main .container-restaurants .footer-card .icon-heart .active-heart {
-  opacity: 0;
-}
-body main .container-restaurants .footer-card .icon-heart .active-heart:hover {
-  opacity: 1;
-}
 
 @media (min-width: 1024px) {
   body main .container-flex {
@@ -488,14 +446,18 @@ body .body-loader {
   color: white;
   text-align: center;
   font-size: 40px;
+  animation: fadeout 5s ease-in;
+  animation-fill-mode: forwards;
 }
 body .container-loader {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #16a085;
-  height: 100px;
-  line-height: 100px;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
 }
 body .loader {
   width: 50px;
@@ -531,6 +493,56 @@ body .loader-quart::after {
     transform: rotate(360deg);
     opacity: 0;
   }
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.icon-menu {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  display: inline-block;
+}
+.icon-menu i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out;
+}
+.icon-menu .heart {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+.icon-menu .active-heart {
+  font-size: 24px;
+  cursor: pointer;
+  background: -webkit-linear-gradient(90deg, #9356DC -20.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.icon-menu:hover .heart {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.icon-menu:hover .active-heart {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */
