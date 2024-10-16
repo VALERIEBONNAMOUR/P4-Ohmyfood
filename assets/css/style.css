@@ -187,13 +187,25 @@ main .space-icon {
   main .card-menu {
     width: 65%;
     height: 50px;
+    margin: auto;
     margin-bottom: 10px;
     animation: menu 3s;
+  }
+  main .title-card {
+    margin-left: 120px;
+    margin-bottom: 10px;
   }
   main .title-link-menu {
     width: 30%;
   }
 }
+.footer-restaurants i.fa-solid.fa-utensils {
+  margin-right: 170px;
+}
+.footer-restaurants i.fa-solid.fa-handshake {
+  margin-right: -200px;
+}
+
 footer {
   background: rgb(53, 53, 53);
   width: 100%;

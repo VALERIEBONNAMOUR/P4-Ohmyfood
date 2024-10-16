@@ -189,16 +189,28 @@ main {
             .card-menu{
                 width: 65%;
                 height: 50px;
+                margin: auto;
                 margin-bottom: 10px;
                 animation: menu 3s;
             }
             .title-card{
-                // margin-left: 120px;
-                // margin-bottom: 10px;
+                margin-left: 120px;
+                margin-bottom: 10px;
             }
             .title-link-menu{
                 width: 30%;  
             }
         }
     }
+    
+    .footer-restaurants {
+        i.fa-solid.fa-utensils {
+            margin-right: 170px;
+        }
+
+        i.fa-solid.fa-handshake {
+            margin-right: -200px;
+        }
+    }
+
 
