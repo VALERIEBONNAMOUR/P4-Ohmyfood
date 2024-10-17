@@ -13,7 +13,7 @@ main {
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
         position: relative;
-        bottom: 60px;
+        margin-top: -30px;
        
 
         .container-title {
@@ -29,6 +29,7 @@ main {
     img {
         height: 295px;
         width: 100%;
+        object-fit: cover;
     }
 
     h1 {
@@ -39,8 +40,12 @@ main {
     }
 
     .title-card {
-        margin-left: 15px;
-        padding-top: 30px;
+        // margin-left: 15px;
+        // padding-top: 30px;
+    }
+
+    .space-card{
+        padding: 15px;
     }
 
     h2 {
@@ -59,13 +64,15 @@ main {
 
     .card-menu {
         background-color: white;
-        height: 72px;
+        height: 50px;
         padding: 10px;
         border-radius: 15px 15px 15px 15px;
-        margin: 10px;
+        // margin: 10px;
         overflow: hidden;
         display: flex;
         justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 10px;
 
         p {
             margin: 0;
@@ -133,21 +140,23 @@ main {
     .rectangle{
         display: flex;
         justify-content: center;
+        padding: 20px;
     }
     .title-link-menu {
         background: linear-gradient(193.33deg, #9356DC -20.44%, #FF79DA 123.93%);
-        padding: 20px;
+        padding: 10px;
         border-radius: 30px;
         display: flex;
         justify-content: center;
         margin: 0;
+        width: 150px;
     }
 
     .link-menu {
         color: white;
         text-decoration: none;
         font-weight: bold;
-        font-size: large;
+        font-size: medium;
     }
 
     .space-icon {

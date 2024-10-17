@@ -41,7 +41,7 @@ main .container-card {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   position: relative;
-  bottom: 60px;
+  margin-top: -30px;
 }
 main .container-card .container-title {
   display: flex;
@@ -54,15 +54,15 @@ main .container-card .container-title {
 main img {
   height: 295px;
   width: 100%;
+  object-fit: cover;
 }
 main h1 {
   font-size: 32px;
   font-weight: bold;
   font-family: shrikhand;
 }
-main .title-card {
-  margin-left: 15px;
-  padding-top: 30px;
+main .space-card {
+  padding: 15px;
 }
 main h2 {
   font-weight: normal;
@@ -78,13 +78,14 @@ main .ligne-title {
 }
 main .card-menu {
   background-color: white;
-  height: 72px;
+  height: 50px;
   padding: 10px;
   border-radius: 15px 15px 15px 15px;
-  margin: 10px;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 main .card-menu p {
   margin: 0;
@@ -142,20 +143,22 @@ main .card-menu:hover .card-prices {
 main .rectangle {
   display: flex;
   justify-content: center;
+  padding: 20px;
 }
 main .title-link-menu {
   background: linear-gradient(193.33deg, #9356DC -20.44%, #FF79DA 123.93%);
-  padding: 20px;
+  padding: 10px;
   border-radius: 30px;
   display: flex;
   justify-content: center;
   margin: 0;
+  width: 150px;
 }
 main .link-menu {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: large;
+  font-size: medium;
 }
 main .space-icon {
   margin-left: 55px;
@@ -391,15 +394,11 @@ body main .container-restaurants .rectangle {
   right: 25px;
   justify-content: center;
   background: rgb(153, 226, 208);
-  width: 80px;
-  height: 29px;
+  height: 5px;
   position: absolute;
   color: rgb(0, 135, 102);
   display: flex;
   align-items: center;
-}
-body main .container-restaurants p.new-text {
-  margin-left: 10px;
 }
 body main .container-restaurants .footer-card {
   display: flex;
