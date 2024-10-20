@@ -11,19 +11,21 @@ body {
       display: flex;
       flex-direction: column;
       gap: 15px;
-      margin-left: 10px;
       padding-bottom: 60px;
       padding-top: 20px;
+      padding: 50px 20px 70px 20px;
 
       .container-flex {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 30px;
       }
 
       h2 {
         font-weight: bold;
-        margin-left: 14px;
+        color: black;
+        margin-bottom: 15px;
+        font-size: 24px;
       }
 
     }
@@ -31,7 +33,10 @@ body {
     .title-container {
       text-align: center;
       background-color: #F6F6F6;
-      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 30px;
 
       .title-link {
         background: linear-gradient(193.33deg, #9356DC -20.44%, #FF79DA 123.93%);
@@ -40,10 +45,8 @@ body {
         color: white;
         text-decoration: none;
         font-weight: bold;
-      }
-
-      p {
-        margin-bottom: 30px;
+        width: 220px;
+        margin: auto;
       }
 
       h1 {
@@ -54,7 +57,7 @@ body {
 
     .btn-choice {
       background-color: rgba(246, 246, 246, 1);
-      width: 90%;
+      width: 100%;
       margin: auto;
       border-radius: 15px;
       display: flex;
@@ -62,16 +65,17 @@ body {
       align-items: center;
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
       position: relative;
-
+   
       #icon-color {
         color: rgba(147, 86, 220, 1);
-        font-size: 30px;
-        transform: translate(-1rem);
+        font-size: 24px;
+        transform: translateX(-40%);
       }
 
       .number {
         position: absolute;
-        left: 10px;
+        left: 14px;
+        top: 1px;
         color: white;
         font-weight: bold;
         transform: translate(-1rem);
@@ -94,18 +98,16 @@ body {
 
     .container-restaurants {
       background-color: rgb(250, 249, 249);
-      padding-top: 30px;
-      padding-bottom: 60px;
+      padding: 50px 20px 70px 20px;
+
 
       h2 {
         font-weight: bold;
-        margin-left: 17px;
+        color: black;
         margin-bottom: 15px;
+        font-size: 24px;
       }
 
-      .restaurants-cards {
-        margin: 20px;
-      }
 
       .card {
         background-color: white;
@@ -184,16 +186,13 @@ body {
         justify-content: center;
       }
 
-      .btn-choice {
-        width: calc(33% - 15px);
-      }
 
       .btn-container {
-        padding: 40px;
+        padding: 50px 150px 50px 150px;
       }
 
       .container-restaurants {
-        padding: 40px;
+        padding: 50px 150px 50px 150px;
 
         a {
           width: calc(50% - 30px);

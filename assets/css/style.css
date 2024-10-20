@@ -57,15 +57,13 @@ main img {
   object-fit: cover;
 }
 main h1 {
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 28px;
   font-family: shrikhand;
 }
-main .space-card {
-  padding: 15px;
-}
 main h2 {
-  font-weight: normal;
+  color: #737373;
+  font-size: 1.2rem;
+  font-weight: 300;
   font-family: roboto;
   margin: 0;
 }
@@ -75,6 +73,9 @@ main .ligne-title {
   height: 3px;
   border: 3px;
   margin-top: 5px;
+}
+main .space-card {
+  padding: 10px;
 }
 main .card-menu {
   background-color: white;
@@ -167,14 +168,16 @@ main .space-icon {
 @media (min-width: 1024px) {
   main .container-card {
     background-color: rgb(246, 246, 246);
-    width: 70%;
-    left: 159px;
+    width: 80%;
+    margin: auto;
+    margin-top: -40px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
   }
   main .container-card .container-title {
     display: flex;
     gap: 50px;
+    margin-bottom: 30px;
     justify-content: center;
     margin-left: 15px;
   }
@@ -185,17 +188,18 @@ main .space-icon {
     display: flex;
     align-items: center;
     font-family: shrikhand;
-    font-weight: bold;
+  }
+  main .space-card {
+    width: 50%;
+    margin: auto;
   }
   main .card-menu {
-    width: 65%;
     height: 50px;
     margin: auto;
     margin-bottom: 10px;
-    animation: menu 3s;
+    animation: menu 3s linear 0s;
   }
   main .title-card {
-    margin-left: 120px;
     margin-bottom: 10px;
   }
   main .title-link-menu {
@@ -221,7 +225,8 @@ footer .container-footer p {
   margin: 0;
 }
 footer .container-footer h2 {
-  margin-top: 0;
+  font-size: 18px;
+  font-weight: 100;
 }
 footer .container-footer .container-link {
   display: flex;
@@ -259,7 +264,7 @@ footer .text-footer {
   }
   h2 {
     margin-right: 15px;
-    margin-top: 15px;
+    margin-top: -15px;
   }
   .title-footer {
     margin-top: 20px;
@@ -280,23 +285,28 @@ body main .btn-container {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-left: 10px;
   padding-bottom: 60px;
   padding-top: 20px;
+  padding: 50px 20px 70px 20px;
 }
 body main .btn-container .container-flex {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
 }
 body main .btn-container h2 {
   font-weight: bold;
-  margin-left: 14px;
+  color: black;
+  margin-bottom: 15px;
+  font-size: 24px;
 }
 body main .title-container {
   text-align: center;
   background-color: #F6F6F6;
-  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px;
 }
 body main .title-container .title-link {
   background: linear-gradient(193.33deg, #9356DC -20.44%, #FF79DA 123.93%);
@@ -305,9 +315,8 @@ body main .title-container .title-link {
   color: white;
   text-decoration: none;
   font-weight: bold;
-}
-body main .title-container p {
-  margin-bottom: 30px;
+  width: 220px;
+  margin: auto;
 }
 body main .title-container h1 {
   margin: auto;
@@ -315,7 +324,7 @@ body main .title-container h1 {
 }
 body main .btn-choice {
   background-color: rgb(246, 246, 246);
-  width: 90%;
+  width: 100%;
   margin: auto;
   border-radius: 15px;
   display: flex;
@@ -326,12 +335,13 @@ body main .btn-choice {
 }
 body main .btn-choice #icon-color {
   color: rgb(147, 86, 220);
-  font-size: 30px;
-  transform: translate(-1rem);
+  font-size: 24px;
+  transform: translateX(-40%);
 }
 body main .btn-choice .number {
   position: absolute;
-  left: 10px;
+  left: 14px;
+  top: 1px;
   color: white;
   font-weight: bold;
   transform: translate(-1rem);
@@ -349,16 +359,13 @@ body main .btn-choice i#icon-title.fa-solid.fa-store {
 }
 body main .container-restaurants {
   background-color: rgb(250, 249, 249);
-  padding-top: 30px;
-  padding-bottom: 60px;
+  padding: 50px 20px 70px 20px;
 }
 body main .container-restaurants h2 {
   font-weight: bold;
-  margin-left: 17px;
+  color: black;
   margin-bottom: 15px;
-}
-body main .container-restaurants .restaurants-cards {
-  margin: 20px;
+  font-size: 24px;
 }
 body main .container-restaurants .card {
   background-color: white;
@@ -418,14 +425,11 @@ body main .container-restaurants .footer-card {
     display: flex;
     justify-content: center;
   }
-  body main .btn-choice {
-    width: calc(33% - 15px);
-  }
   body main .btn-container {
-    padding: 40px;
+    padding: 50px 150px 50px 150px;
   }
   body main .container-restaurants {
-    padding: 40px;
+    padding: 50px 150px 50px 150px;
   }
   body main .container-restaurants a {
     width: calc(50% - 30px);
@@ -529,6 +533,7 @@ body .loader-quart::after {
   width: 100%;
   height: 100%;
   display: flex;
+  color: black;
   align-items: center;
   justify-content: center;
   transition: opacity 0.3s ease-in-out;

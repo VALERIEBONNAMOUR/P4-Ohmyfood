@@ -14,7 +14,7 @@ main {
         border-top-right-radius: 30px;
         position: relative;
         margin-top: -30px;
-       
+
 
         .container-title {
             display: flex;
@@ -33,23 +33,15 @@ main {
     }
 
     h1 {
-        font-size: 32px;
-        font-weight: bold;
+        font-size: 28px;
         font-family: shrikhand;
-        
-    }
 
-    .title-card {
-        // margin-left: 15px;
-        // padding-top: 30px;
-    }
-
-    .space-card{
-        padding: 15px;
     }
 
     h2 {
-        font-weight: normal;
+        color: #737373;
+        font-size: 1.2rem;
+        font-weight: 300;
         font-family: roboto;
         margin: 0;
     }
@@ -60,6 +52,10 @@ main {
         height: 3px;
         border: 3px;
         margin-top: 5px;
+    }
+
+    .space-card {
+        padding: 10px;
     }
 
     .card-menu {
@@ -109,7 +105,7 @@ main {
                 align-items: center;
                 display: flex;
                 height: 100%;
-                background:  rgba(153, 226, 208, 1);
+                background: rgba(153, 226, 208, 1);
                 padding: 10px;
                 width: 40px;
                 justify-content: center;
@@ -117,7 +113,7 @@ main {
                 border-bottom-right-radius: 15px;
             }
 
-            i.fa-solid.fa-circle-check{
+            i.fa-solid.fa-circle-check {
                 color: white;
             }
         }
@@ -137,11 +133,12 @@ main {
         margin-right: -10px;
     }
 
-    .rectangle{
+    .rectangle {
         display: flex;
         justify-content: center;
         padding: 20px;
     }
+
     .title-link-menu {
         background: linear-gradient(193.33deg, #9356DC -20.44%, #FF79DA 123.93%);
         padding: 10px;
@@ -165,61 +162,69 @@ main {
 
 }
 
-@media (min-width: 1024px){
-    
-        main {
-            .container-card {
-                background-color: rgba(246, 246, 246, 1);
-                width: 70%;
-                left: 159px;
-                border-top-left-radius: 30px;
-                border-top-right-radius: 30px;
-                
-                .container-title {
-                    display: flex;
-                    gap: 50px;
-                    justify-content: center;
-                    margin-left: 15px;
-                }
-            }
+@media (min-width: 1024px) {
 
-            img {
-                height: 400px;
-            }
+    main {
+        .container-card {
+            background-color: rgba(246, 246, 246, 1);
+            width: 80%;
+            margin: auto;
+            margin-top: -40px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
 
-            h1{
+            .container-title {
                 display: flex;
-                align-items: center;
-                font-family: shrikhand;
-                font-weight: bold;
+                gap: 50px;
+                margin-bottom: 30px;
+                justify-content: center;
+                margin-left: 15px;
             }
+        }
 
-        
-            .card-menu{
-                width: 65%;
-                height: 50px;
-                margin: auto;
-                margin-bottom: 10px;
-                animation: menu 3s;
-            }
-            .title-card{
-                margin-left: 120px;
-                margin-bottom: 10px;
-            }
-            .title-link-menu{
-                width: 30%;  
-            }
+        img {
+            height: 400px;
+        }
+
+        h1 {
+            display: flex;
+            align-items: center;
+            font-family: shrikhand;
+            
+        }
+
+        .space-card {
+            width: 50%;
+            margin: auto;
+        }
+
+        .card-menu {
+
+            height: 50px;
+            margin: auto;
+            margin-bottom: 10px;
+            animation: menu 3s linear 0s;
+
+        }
+
+
+        .title-card {
+
+            margin-bottom: 10px;
+        }
+
+        .title-link-menu {
+            width: 30%;
         }
     }
-    
-    .footer-restaurants {
-        i.fa-solid.fa-utensils {
-            margin-right: 170px;
-        }
+}
 
-        i.fa-solid.fa-handshake {
-            margin-right: -200px;
-        }
+.footer-restaurants {
+    i.fa-solid.fa-utensils {
+        margin-right: 170px;
     }
 
-
+    i.fa-solid.fa-handshake {
+        margin-right: -200px;
+    }
+}
