@@ -20,7 +20,6 @@ header .container-nav {
 }
 header a {
   color: black;
-  size: 16px;
   font-family: sans-serif;
 }
 
@@ -333,7 +332,7 @@ body main .btn-choice {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   position: relative;
 }
-body main .btn-choice #icon-color {
+body main .btn-choice .icon-color {
   color: rgb(147, 86, 220);
   font-size: 24px;
   transform: translateX(-40%);
@@ -351,10 +350,7 @@ body main .btn-choice .btn-title {
   left: 40px;
   font-weight: bold;
 }
-body main .btn-choice .icon-title {
-  size: 50px;
-}
-body main .btn-choice i#icon-title.fa-solid.fa-store {
+body main .btn-choice i.icon-title.fa-solid.fa-store {
   color: rgb(147, 86, 220);
 }
 body main .container-restaurants {
